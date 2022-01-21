@@ -57,6 +57,17 @@ input {
   text-decoration: none;
 }
 
+.section__title--hidden, .accord__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -84,17 +95,6 @@ input {
 
 .title {
   color: var(--text-second-color);
-}
-
-.section__title--hidden, .accord__check {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: none;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .logo {
@@ -486,6 +486,7 @@ input {
 .header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
+  outline-color: transparent;
   -webkit-transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -493,7 +494,6 @@ input {
   outline-color: var(--text-accent-color);
 }
 
-/*  ? == ГЛАВНАЯ НАВИГАЦИЯ == */
 .nav-box {
   padding-left: 93px;
   -webkit-box-align: center;

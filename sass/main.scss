@@ -1,11 +1,10 @@
 @import './utils.scss/variables';
-@import './utils.scss/my-norm';
+@import './utils.scss/my-normalize';
 @import './utils.scss/placeholder';
-
+@import './components/common';
 @import './components/logo';
 @import './components/modal';
 @import './components/webpages';
-
 @import './layout/header-all';
 @import './layout/header-nav';
 @import './layout/header-contact';
