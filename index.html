@@ -5,26 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HW-07_ГЛАВНАЯ</title>
+  <title>07-TEST-ГЛАВНАЯ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <!-- Файл НОРМАЛИЗ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
   <!-- ! ======================= ШАПКА САЙТА HEADER =====================================  -->
 
 
-  <header class="section header">
-    <div class="container head__container">
+  <header class="header">
+    <div class="container header__container">
 
       <!-- ЛОГОТИП СТУДИИ -->
       <a class="logo header__logo link" href="./index.html">
-        <span class="logo__txt--accented">Web</span>Studio</a>
+        Web<span class="logo__part--dark">Studio</span></a>
 
       <!-- !==================== ГЛАВНАЯ НАВИГАЦИЯ C ПЕРВЫМ СПИСКОМ ===================== -->
       <nav class="nav-box">
@@ -64,15 +64,15 @@
 
     <!-- !  ____ СЕКЦИЯ HERO _____ -->
 
-    <section class="section hero">
+    <section class="hero">
       <div class="container hero__container">
         <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
-        <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
+        <button class="big-button hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
     <!-- ! ____ СЕКЦИЯ ОСОБЕННОСТИ ____ -->
-    <section class="section nuances">
+    <section class="section-thin nuances">
       <div class="container nuanses__container">
         <h2 class="section__title section__title--hidden">Особенности</h2>
         <ul class="nuances-list list">
@@ -384,12 +384,12 @@
 
   <!-- ! ............ FOOTER .............. -->
 
-  <footer class="section footer">
+  <footer class="footer">
     <div class="container footer__container">
 
       <div class="footer__contacts">
-        <a href="./index.html" class="logo footer__logo link"><span class="logo__txt--accented">Web</span><span
-            class="logo__txt--light">Studio</span></a>
+        <a href="./index.html" class="logo footer__logo link">
+          Web<span class="logo__part--light">Studio</span></a>
         <address class="address">
           <ul class="address-list list">
             <li class="address-list__item">
@@ -443,8 +443,8 @@
         <label class="mailing__label mailing-label" for="subscribe">Подпишитесь на рассылку</label>
         <div class="mailing__box"><input class="mailing__input" type="email" name="subscribe" id="subscribe"
             placeholder="E-mail">
-          <button class="mailing__btn btn" type="submit">Подписаться<svg class="mailing__icon mailing-icon" width="24"
-              height="24">
+          <button class="button mailing__btn btn" type="submit">Подписаться<svg class="mailing__icon mailing-icon"
+              width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg></button>
         </div>
@@ -455,7 +455,6 @@
   </footer>
 
   <!-- ! ________ МОДАЛЬНОЕ ОКНО _________ -->
-
   <div class="backdrop is-hidden" data-modal>
     <div class="backdrop__modal is-hidden__modal modal">
       <button class="modal__close" data-modal-close>
@@ -497,7 +496,6 @@
               <use href="./images/icons.svg#form-email-18dp">
               </use>
             </svg></span>
-
         </div>
 
         <div class="form__comment">
@@ -519,7 +517,7 @@
           </label>
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить</button>
+        <button class="big-button form__btn btn" type="submit">Отправить</button>
       </form>
     </div>
 
