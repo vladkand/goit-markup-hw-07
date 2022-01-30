@@ -23,6 +23,7 @@
   &:hover,
   &:focus {
     outline-color: var(--text-accent-color);
+    border-color: var(--text-accent-color);
   }
 }
 
